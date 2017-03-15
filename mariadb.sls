@@ -21,6 +21,7 @@ mariadb-pkgs:
         collation_server               : utf8_general_ci 
 
         # GENERAL #
+        bind-address                   : 0.0.0.0
         default-storage-engine         : InnoDB
         socket                         : /var/run/mysqld/mysqld.sock
         pid-file                       : /var/run/mysqld/mysqld.pid
