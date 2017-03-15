@@ -53,6 +53,7 @@ mariadb-pkgs:
         open-files-limit               : 65535
         table-definition-cache         : 1024
         table-open-cache               : 2048
+        performance-schema             : ON
 
         # INNODB #
         innodb-flush-method            : O_DIRECT
