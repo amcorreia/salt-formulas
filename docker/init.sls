@@ -1,7 +1,7 @@
 
 docker-repo:
     pkgrepo.managed:
-      - repo: deb [arch=amd64] https://download.docker.com/linux/debian jessie stable
+      - name: deb [arch=amd64] https://download.docker.com/linux/debian jessie stable
       - dist: jessie
       - file: /etc/apt/sources.list.d/docker.list
       - key_url: http://download.docker.com/linux/debian/gpg
@@ -15,7 +15,7 @@ docker-repo:
 docker-dependencies:
    pkg.installed:
     - pkgs:
-      - python-software-properties
+      - python3-software-properties
       - apt-transport-https
       - ca-certificates
 
